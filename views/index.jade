@@ -1,0 +1,162 @@
+extends layout
+
+block content
+    div.container
+        div.main-page(id='header')
+            div.navigate
+                div.logo.bold Bokator Khmer Angkor Club
+                div.navigate-item(ng-click="scrollToElement('profile')") WHO WE ARE
+                div.navigate-item(ng-click="scrollToElement('tour')") WHAT WE DO
+                div.navigate-item(ng-click="scrollToElement('contact')") CONTACT
+            div.background-banner
+                img(src='images/top_img.png')
+            div.mark(style="top: 170px; left: 131px;")
+                p.name.bold Samedy
+                p.title Leader
+                div.arrow.left-bottom
+            div.mark(style="top: 390px; right: 235px;")
+                p.name.bold Samreth
+                p.title Instructor
+                div.arrow.right-top
+        div.intro-banner
+            p.title.bold
+                |We are operating a #[span.underline BOKATOR] club in #[span.underline Siem Reap]
+            p Bokator is a Cambodia traditional martial art which fell
+              | during Red Khmer period under government's persecution.
+              | Now we are the only 3 Bokator clubs in Siem Reap area.
+        div.team-page
+            div.title.bold The TEAM
+            div.background-banner
+                img(src='images/team_img.png')
+            div.float-block-container
+                div.float-block
+                    p Mostly we provide free class for students considering
+                      | their poor condition
+                div.float-block
+                    p Some kids from rural area lives in our club.<br>
+                      span We teach them Bokator so even they can't afford
+                           | school, they can survive and support family.
+        div.full-block-row
+            div.full-block.intro-block(style='background-color: #86F7E8')
+                div.block-span.left
+                    p Attending performance support the organization's operation.<br>
+                      | Kids will join some performance as well. They earn their living
+                      | and support their family by hardworking in Bokator.
+            div.full-block(style='background-color: #78C8FF')
+                div.block-span.right
+                    div.block-number 1
+                    p.block-title Bokator Demo
+                    p.block-text To show tricks and techniques to defend and attack enemy by using
+                      | elbow, knee, kick, punch, crape and other style.
+                    div.media-icon
+                        img(src='images/video_icn.png')
+        div.full-block-row
+            div.full-block(style='background-color: #2ADECE')
+                div.block-span.left
+                    div.block-number 2
+                    p.block-title Bokator Respect Master Form
+                    p.block-text It's greeting to spirit of master who created Bokator Khmer
+                                 | martial art by many different forms.
+                    div.media-icon
+                        img(src='images/pic_icn.png')
+            div.full-block(style='background-color: #3584EA')
+                div.block-span.right
+                    div.block-number 3
+                    p.block-title Bokator Fighting Show
+                    p.block-text They are two man fighting and show Bokator tricks, techniques and
+                        | acrobat, to escape, defend and attack to each other.
+                    div.media-icon
+                        img(src='images/pic_icn.png')
+        div.show-page
+            div.title Bokator Demonstration at CTN arena
+            div.icon-line
+                div.icon-block
+                    div.icon-title Bokator demo and form
+                    img(src='images/show_icn1.png')
+                div.icon-block
+                    div.icon-title Long stick vs Long stick
+                    img(src='images/show_icn2.png')
+                div.icon-block
+                    div.icon-title Bokator fighting show
+                    img(src='images/show_icn3.png')
+                div.icon-block
+                    div.icon-title Sword vs Sword
+                    img(src='images/show_icn4.png')
+                div.icon-block
+                    div.icon-title Shield vs Long Stick
+                    img(src='images/show_icn5.png')
+        div.festival-page
+            div.background-banner
+                img(src='images/fav_img.png')
+            div.float-span
+                div.title Festival Performance
+                span Khmer New Year / Angkor Sangkran
+                p Time: 14th, 15th, 16th April<br>
+                  | Location: Angkor Wat
+                span Water Festival Ceremony
+                p Time: November<br>
+                  | Location: King Road Restaurant
+                span New Year Eve
+                p Time: 31th Dec
+                  | Location: Hotels
+        div.full-block-row
+            div.full-block(style='background-color: #16A267')
+                div.block-span.left
+                    div.table-title.bold Practise
+                    table
+                        tr
+                            td.time 8:00 - 11:00
+                            td.schedule Morning training session, <br>acrobat and body build
+                        tr
+                            td.time 11:00 - 14:00
+                            td.schedule Lunch break
+                        tr
+                            td.time 14:00 - 15:00
+                            td.schedule Afternoon session, <br> Martial art movement
+                        tr
+                            td.time 15:00 - 18:00
+                            td.schedule Bokator Class
+                        tr
+                            td.time 20:00 - 22:00
+                            td.schedule Performance
+            div.full-block(style='background-color: #16A267')
+                div.block-span.right
+                    div.table-title Students
+                    p.student-intro We have around 15-20 students, they train in different schedule.
+                      | There are many students take class at 5 pm - 6 pm every Monday to
+                      | Friday. A few students are trained every weekend. Time is flexible
+                      | as they have full time jobs. <br>
+                      | Some local students practise for free, some students give us 10 dollars
+                      | per month. All depends on their condition. <br>
+                      | There are four kids from rural area live in the club. We also provide food for them.
+        div.student-page
+            div.background-banner
+                img(src='images/stu_img.png')
+        div.full-block-row(style='height: 560px')
+            div.full-block(style='background-color: #86F7E8')
+                div.block-span.left
+                    div.class-title Class for tourists
+                    p.class-type Package 1, Basic Practise<br>
+                                 | Training time: 1 hour, Price $5/pax
+                    p.class-detail Traditional training form
+                    p.class-detail Bokator self defence technique
+                    p.class-detail Brief history about Bokator in Khmer
+            div.full-block(style='background-color: #78C8FF')
+                div.block-span.right
+                    div.class-title Class for tourists
+                    p.class-type Package 2, Weapon Practise<br>
+                        | Training time: 1.5 hour, Price $10/pax
+                    p.class-detail Traditional training form
+                    p.class-detail  Bokator self defence technique
+                    p.class-detail  Weapon Training (Sword, shield, long stick)
+                    p.class-detail  Brief history about Bokator in Khmer
+        div.class-page
+            div.class-info-span
+                div.title Capacity
+                div.info 6-8 pax in the class, 1 instructor <br>
+                         | 8-15 pax split 2 classes, 2 instructors
+                div.title Schedule
+                div.info Monday - Friday Time: 7:00-11:00am/2:00-6:00pm <br>
+                         | Saturday - Sunday Time: 7:00-11:00am/3:00-6:00pm
+        ui-gmap-google-map(center='map.center', zoom='map.zoom')
+            ui-gmap-marker(coords="marker.coords", options="marker.options", events="marker.events", idkey="marker.id")
