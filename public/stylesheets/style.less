@@ -33,8 +33,10 @@ a {
   overflow: hidden;
   img{
     height: 100%;
+    width: auto;
     @media (min-width:1280px) {
       width: 100%;
+      height: auto;
     }
   }
 }
@@ -304,3 +306,48 @@ a {
   }
 }
 .angular-google-map-container { height: 360px; }
+.tv-page{
+  width: 100%;
+  height: 360px;
+  position: relative;
+  background-color: #16A267;
+  .video-container{
+    width: 480px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    video{
+      margin-top: -60px;
+    }
+  }
+  .float-word{
+    position: absolute;
+    top: 120px;
+    font-size: 30px;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+  }
+  img{
+    position: absolute;
+    top: 170px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+.contact-page {
+  width: 100%;
+  height: 750px;
+  position: relative;
+}
+.ad-page{
+  width: 100%;
+  height: 600px;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 300px;
+  background-color: #2ADECE;
+  color: #ffffff;
+}

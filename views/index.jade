@@ -9,7 +9,7 @@ block content
                 div.navigate-item(ng-click="scrollToElement('tour')") WHAT WE DO
                 div.navigate-item(ng-click="scrollToElement('contact')") CONTACT
             div.background-banner
-                img(src='images/top_img.png')
+                img(src='images/top_img.jpg')
             div.mark(style="top: 170px; left: 131px;")
                 p.name.bold Samedy
                 p.title Leader
@@ -27,7 +27,7 @@ block content
         div.team-page
             div.title.bold The TEAM
             div.background-banner
-                img(src='images/team_img.png')
+                img(src='images/team_img-2.jpg')
             div.float-block-container
                 div.float-block
                     p Mostly we provide free class for students considering
@@ -87,7 +87,7 @@ block content
                     img(src='images/show_icn5.png')
         div.festival-page
             div.background-banner
-                img(src='images/fav_img.png')
+                img(src='images/fav_img.jpg')
             div.float-span
                 div.title Festival Performance
                 span Khmer New Year / Angkor Sangkran
@@ -131,7 +131,7 @@ block content
                       | There are four kids from rural area live in the club. We also provide food for them.
         div.student-page
             div.background-banner
-                img(src='images/stu_img.png')
+                img(src='images/stu_img.jpg')
         div.full-block-row(style='height: 560px')
             div.full-block(style='background-color: #86F7E8')
                 div.block-span.left
@@ -158,5 +158,14 @@ block content
                 div.title Schedule
                 div.info Monday - Friday Time: 7:00-11:00am/2:00-6:00pm <br>
                          | Saturday - Sunday Time: 7:00-11:00am/3:00-6:00pm
+        div.tv-page
+            div.video-container
+                video(src="images/talent_show.mp4", autoplay="autoplay", loop="loop")
+            div.float-word Our performance team made it into semi-final of #[span.underline Cambodia Got Talent] TV show
+            img(src="images/video_icn.png")
         ui-gmap-google-map(center='map.center', zoom='map.zoom')
             ui-gmap-marker(coords="marker.coords", options="marker.options", events="marker.events", idkey="marker.id")
+        div.contact-page
+            div.background-banner
+                img(src='images/contact_img.jpg')
+        div.ad-page NativeSmiles.com
