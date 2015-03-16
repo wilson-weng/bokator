@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    div.swiper-container
+        div.swiper-wrapper
+            div.swiper-slide
+                div.main-page(id='header')
+                    div.navigate
+                        div.logo.bold Bokator Khmer Angkor Club
+                        div.navigate-item(ng-click="scrollToElement('profile')") WHO WE ARE
+                        div.navigate-item(ng-click="scrollToElement('tour')") WHAT WE DO
+                        div.navigate-item(ng-click="scrollToElement('contact')") CONTACT
+                    div.name-tag(style="top: 170px; left: 131px;")
+                        p.name.bold Samedy
+                        p.title Leader
+                        div.arrow.left-bottom
+                    div.name-tag(style="top: 390px; right: 235px;")
+                        p.name.bold Samreth
+                        p.title Instructor
+                        div.arrow.right-top
+            div.swiper-slide
+                div.intro-banner
+                    div.col-md-1
+                    div.col-md-10
+                        p.title.bold
+                            |We are operating a #[span.underline BOKATOR] club in #[span.underline Siem Reap]
+                        p Bokator is a Cambodia traditional martial art which fell
+                            | during Red Khmer period under government's persecution.
+                            | Now we are the only 3 Bokator clubs in Siem Reap area.
+                    div.col-md-1
+

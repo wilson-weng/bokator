@@ -1,6 +1,6 @@
 @font-face {
   font-family: DIN;
-  src: url('DIN%20Regular.otf');
+  src: url('DIN-Light.otf');
 }
 @font-face {
   font-family: DIN-Bold;
@@ -56,7 +56,7 @@ a {
       float: right;
     }
   }
-  .mark{
+  .name-tag{
     position: absolute;
     color: #16A267;
     p{
@@ -86,6 +86,11 @@ a {
   width: 100%;
   height: 420px;
   display: table;
+  .intro-span{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   p{
     color: #ffffff;
     font-size: 30px;
@@ -93,6 +98,7 @@ a {
   .title{
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 44px;
     font-size: 44px;
   }
 }
@@ -130,8 +136,7 @@ a {
         margin-right: 2px;
       }
       p{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 12px 20px 20px;
       }
       span{
         font-size: 12px;
@@ -168,12 +173,12 @@ a {
   .block-title{
     font-size: 44px;
     margin-bottom: 0;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .block-text{
-    line-height: 44px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    line-height: 36px;
+    margin-top: 30px;
+    margin-bottom: 36px;
   }
   .left{
     float: right;
@@ -213,7 +218,7 @@ a {
   .class-detail{
     font-size: 20px;
     margin: 0 0 10px;
-    line-height: 30px;
+    line-height: 25px;
   }
 }
 .show-page{
@@ -304,19 +309,19 @@ a {
     }
   }
   .float-word{
-    width: 450px;
+    width: 480px;
     position: absolute;
     top: 80px;
     left: 0;
     right: 0;
     margin: auto;
-    font-size: 30px;
+    font-size: 26px;
     color: #ffffff;
     text-align: center;
   }
   img{
     position: absolute;
-    top: 200px;
+    top: 180px;
     left: 0;
     right: 0;
     margin: auto;
@@ -337,4 +342,8 @@ a {
   padding-top: 300px;
   background-color: #2ADECE;
   color: #ffffff;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
 }

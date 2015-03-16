@@ -1,0 +1,24 @@
+doctype html
+html(ng-app='bokator')
+  head
+    title= title
+    link(rel='stylesheet', href='/javascripts/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/javascripts/bootstrap/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet" href="javascripts/swiper/css/swiper.min.css")
+    script(src='/javascripts/jquery-1.11.1.min.js')
+    script(src='/javascripts/angular/vendor/angular.min.js')
+    script(src='http://maps.google.cn/maps/api/js')
+    script(src='/javascripts/lodash.min.js')
+    script(src='/javascripts/angular/vendor/angular-google-maps.min.js')
+    script(src='/javascripts/angular/application/application.js')
+    script(src='/javascripts/bootstrap/js/bootstrap.min.js')
+    script(src="/javascripts/swiper/js/swiper.min.js")
+  body(ng-controller='ApplicationCtrl')
+    block content
+    script.
+        var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true
+        })
