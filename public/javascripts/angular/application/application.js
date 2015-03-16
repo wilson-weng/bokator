@@ -16,7 +16,7 @@ var bokator = angular.module('bokator', ['uiGmapgoogle-maps'])
 }]);
 
 bokator.controller('ApplicationCtrl', ['$scope', function($scope){
-    $scope.map = { center: { latitude: 13.367428, longitude: 103.861936}, zoom: 15 };
+    $scope.map = { center: { latitude: 13.367428, longitude: 103.861936}, zoom: 15, options: {scrollwheel: false} };
     $scope.marker = {
         id: 0,
         coords: {

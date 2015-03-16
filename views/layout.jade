@@ -2,6 +2,8 @@ doctype html
 html(ng-app='bokator')
   head
     title= title
+    link(rel='stylesheet', href='/javascripts/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/javascripts/bootstrap/css/bootstrap-theme.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='/javascripts/jquery-1.11.1.min.js')
     script(src='/javascripts/angular/vendor/angular.min.js')
@@ -9,5 +11,6 @@ html(ng-app='bokator')
     script(src='/javascripts/lodash.min.js')
     script(src='/javascripts/angular/vendor/angular-google-maps.min.js')
     script(src='/javascripts/angular/application/application.js')
+    script(src='/javascripts/bootstrap/js/bootstrap.min.js')
   body(ng-controller='ApplicationCtrl')
     block content

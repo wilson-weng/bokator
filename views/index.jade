@@ -1,15 +1,13 @@
 extends layout
 
 block content
-    div.container
+    div.page-container
         div.main-page(id='header')
             div.navigate
                 div.logo.bold Bokator Khmer Angkor Club
                 div.navigate-item(ng-click="scrollToElement('profile')") WHO WE ARE
                 div.navigate-item(ng-click="scrollToElement('tour')") WHAT WE DO
                 div.navigate-item(ng-click="scrollToElement('contact')") CONTACT
-            div.background-banner
-                img(src='images/top_img.jpg')
             div.mark(style="top: 170px; left: 131px;")
                 p.name.bold Samedy
                 p.title Leader
@@ -19,15 +17,16 @@ block content
                 p.title Instructor
                 div.arrow.right-top
         div.intro-banner
-            p.title.bold
-                |We are operating a #[span.underline BOKATOR] club in #[span.underline Siem Reap]
-            p Bokator is a Cambodia traditional martial art which fell
-              | during Red Khmer period under government's persecution.
-              | Now we are the only 3 Bokator clubs in Siem Reap area.
+            div.col-md-1
+            div.col-md-10
+                p.title.bold
+                    |We are operating a #[span.underline BOKATOR] club in #[span.underline Siem Reap]
+                p Bokator is a Cambodia traditional martial art which fell
+                  | during Red Khmer period under government's persecution.
+                  | Now we are the only 3 Bokator clubs in Siem Reap area.
+            div.col-md-1
         div.team-page
             div.title.bold The TEAM
-            div.background-banner
-                img(src='images/team_img-2.jpg')
             div.float-block-container
                 div.float-block
                     p Mostly we provide free class for students considering
@@ -36,31 +35,31 @@ block content
                     p Some kids from rural area lives in our club.<br>
                     p(style="font-size: 12px; margin-top: -10px") We teach them Bokator so even they can't afford
                          | school, they can survive and support family.
-        div.full-block-row
-            div.full-block.intro-block(style='background-color: #86F7E8')
-                div.block-span.left
+        div.row
+            div.col-sm-6.full-block.intro-block(style='background-color: #86F7E8')
+                div.block-span
                     p Attending performance support the organization's operation.<br>
                       | Kids will join some performance as well. They earn their living
                       | and support their family by hardworking in Bokator.
-            div.full-block(style='background-color: #78C8FF')
-                div.block-span.right
+            div.col-sm-6.full-block(style='background-color: #78C8FF')
+                div.block-span
                     div.block-number 1
                     p.block-title Bokator Demo
                     p.block-text To show tricks and techniques to defend and attack enemy by using
                       | elbow, knee, kick, punch, crape and other style.
                     div.media-icon
                         img(src='images/video_icn.png')
-        div.full-block-row
-            div.full-block(style='background-color: #2ADECE')
-                div.block-span.left
+        div.row
+            div.col-sm-6.full-block(style='background-color: #2ADECE')
+                div.block-span
                     div.block-number 2
                     p.block-title Bokator Respect Master Form
                     p.block-text It's greeting to spirit of master who created Bokator Khmer
                                  | martial art by many different forms.
                     div.media-icon
                         img(src='images/pic_icn.png')
-            div.full-block(style='background-color: #3584EA')
-                div.block-span.right
+            div.col-sm-6.full-block(style='background-color: #3584EA')
+                div.block-span
                     div.block-number 3
                     p.block-title Bokator Fighting Show
                     p.block-text They are two man fighting and show Bokator tricks, techniques and
@@ -69,25 +68,23 @@ block content
                         img(src='images/pic_icn.png')
         div.show-page
             div.title Bokator Demonstration at CTN arena
-            div.icon-line
-                div.icon-block
+            div.row
+                div.col-md-2.col-md-offset-1.icon-block
                     div.icon-title Bokator demo and form
                     img(src='images/show_icn1.png')
-                div.icon-block
+                div.col-md-2.icon-block
                     div.icon-title Long stick vs Long stick
                     img(src='images/show_icn2.png')
-                div.icon-block
+                div.col-md-2.icon-block
                     div.icon-title Bokator fighting show
                     img(src='images/show_icn3.png')
-                div.icon-block
+                div.col-md-2.icon-block
                     div.icon-title Sword vs Sword
                     img(src='images/show_icn4.png')
-                div.icon-block
+                div.col-md-2.icon-block
                     div.icon-title Shield vs Long Stick
                     img(src='images/show_icn5.png')
         div.festival-page
-            div.background-banner
-                img(src='images/fav_img.jpg')
             div.float-span
                 div.title Festival Performance
                 span Khmer New Year / Angkor Sangkran
@@ -99,9 +96,9 @@ block content
                 span New Year Eve
                 p Time: 31th Dec
                   | Location: Hotels
-        div.full-block-row
-            div.full-block(style='background-color: #16A267')
-                div.block-span.left
+        div.row
+            div.col-md-6.full-block(style='background-color: #16A267')
+                div.block-span
                     div.table-title.bold Practise
                     table
                         tr
@@ -119,8 +116,8 @@ block content
                         tr
                             td.time 20:00 - 22:00
                             td.schedule Performance
-            div.full-block(style='background-color: #16A267')
-                div.block-span.right
+            div.col-md-6.full-block(style='background-color: #16A267')
+                div.block-span
                     div.table-title Students
                     p.student-intro We have around 15-20 students, they train in different schedule.
                       | There are many students take class at 5 pm - 6 pm every Monday to
@@ -130,19 +127,17 @@ block content
                       | per month. All depends on their condition. <br>
                       | There are four kids from rural area live in the club. We also provide food for them.
         div.student-page
-            div.background-banner
-                img(src='images/stu_img.jpg')
-        div.full-block-row(style='height: 560px')
-            div.full-block(style='background-color: #86F7E8')
-                div.block-span.left
+        div.row
+            div.col-sm-6.full-block(style='background-color: #86F7E8; height: 560px')
+                div.block-span
                     div.class-title Class for tourists
                     p.class-type Package 1, Basic Practise<br>
                                  | Training time: 1 hour, Price $5/pax
                     p.class-detail Traditional training form
                     p.class-detail Bokator self defence technique
                     p.class-detail Brief history about Bokator in Khmer
-            div.full-block(style='background-color: #78C8FF')
-                div.block-span.right
+            div.col-sm-6.full-block(style='background-color: #78C8FF; height: 560px')
+                div.block-span
                     div.class-title Class for tourists
                     p.class-type Package 2, Weapon Practise<br>
                         | Training time: 1.5 hour, Price $10/pax
@@ -163,9 +158,7 @@ block content
                 video(src="images/talent_show.mp4", autoplay="autoplay", loop="loop")
             div.float-word Our performance team made it into semi-final of #[span.underline Cambodia Got Talent] TV show
             img(src="images/video_icn.png")
-        ui-gmap-google-map(center='map.center', zoom='map.zoom')
+        ui-gmap-google-map(center='map.center', zoom='map.zoom', options="map.options")
             ui-gmap-marker(coords="marker.coords", options="marker.options", events="marker.events", idkey="marker.id")
         div.contact-page
-            div.background-banner
-                img(src='images/contact_img.jpg')
         div.ad-page NativeSmiles.com
