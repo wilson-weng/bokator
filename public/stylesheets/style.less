@@ -1,3 +1,4 @@
+@grid-float-breakpoint:1000;
 @font-face {
   font-family: DIN;
   src: url('DIN-Light.otf');
@@ -41,48 +42,49 @@ a {
     background:url('../images/sm/top_img_sm.jpg') no-repeat center center;
     background-size:cover;
   }
-  .navigate{
-    width: 100%;
-    height: 100px;
+  .navbar-custom{
     background-color: rgba(22, 162, 103, 0.9);
-    position: absolute;
     color: #ffffff;
-    .logo{
-      float: left;
-      line-height: 100px;
-      margin-left: 35px;
-      font-size: 24px;
+    height: 100px;
+    @media (max-width: 990px) {
+      height: 140px;
     }
-    .navigate-item{
-      line-height: 100px;
-      font-size: 18px;
-      margin-right: 20px;
-      cursor: pointer;
-      float: right;
+    .logo{
+      line-height: 60px;
+      font-size: 24px;
+      @media (max-width: 990px) {
+        line-height: 100px;
+        font-size: 50px;
+      }
+    }
+    .navbar-toggle{
+      margin-top: 40px;
+      margin-right: 40px;
+      .icon-bar{
+        margin-top: 7px;
+        width: 48px;
+        height: 4px;
+        background-color: #ffffff;
+      }
     }
   }
-  .name-tag{
-    position: absolute;
-    color: #16A267;
-    p{
-      margin: 0;
-    }
-    .arrow{
-      width: 0;
-      height: 0;
-      position: absolute;
-      &.left-bottom{
-        border-bottom: 10px solid #16A267;
-        border-left: 10px solid transparent;
-        right: -20px;
-        top: 10px;
-      }
-      &.right-top{
-        border-top: 10px solid #16A267;
-        border-right: 10px solid transparent;
-        top: 5px;
-        left: -20px;
-      }
+}
+.nav li{
+  color: #ffffff;
+  text-align: right;
+  padding-right: 40px;
+  margin-bottom: -1px;
+  font-size: 18px;
+  @media (max-width: 990px) {
+    font-size: 40px;
+    background-color: rgba(22, 162, 103, 0.9);
+  }
+  div{
+    margin-top: 40px;
+    cursor: pointer;
+    @media (max-width: 990px) {
+      margin-top: 0;
+      padding: 20px;
     }
   }
 }
@@ -91,22 +93,37 @@ a {
   width: 100%;
   height: 420px;
   display: table;
+  @media (max-width: 990px) {
+    height: 600px;
+  }
   .intro-span{
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    @media (max-width: 990px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
   p{
     color: #ffffff;
     font-size: 30px;
+    text-align: justify;
+    @media (max-width: 990px) {
+      font-size: 40px;
+    }
   }
   .title{
     text-align: center;
     margin-top: 100px;
     margin-bottom: 44px;
     font-size: 42px;
+    @media (max-width: 990px) {
+      font-size: 58px;
+      line-height: 96px;
+    }
   }
 }
 .team-page{
@@ -132,6 +149,10 @@ a {
     margin: auto;
     height: 136px;
     width: 602px;
+    @media (max-width: 990px) {
+      height: 183px;
+      width: 100%;
+    }
     .float-block{
       width: 300px;
       height: 100%;
@@ -139,14 +160,23 @@ a {
       color: #ffffff;
       font-size: 18px;
       background-color: rgba(22, 162, 103, 0.7);
+      @media (max-width: 990px) {
+        font-size: 35px;
+        width: 50%;
+      }
       &:first-child{
-        margin-right: 2px;
+        border: 0px solid #bcbec1;
+        border-right-width: 2px;
       }
       p{
         margin: 12px 20px 20px;
       }
-      span{
+      .float-block-detail{
         font-size: 12px;
+        margin-top: -10px;
+        @media (max-width: 990px) {
+        font-size: 20px;
+      }
       }
     }
   }
@@ -198,6 +228,7 @@ a {
     line-height: 36px;
     margin-top: 30px;
     margin-bottom: 36px;
+    text-align: justify;
     @media (max-width: 990px) {
       line-height: 55px;
     }
@@ -239,6 +270,7 @@ a {
   .student-intro{
     font-size: 20px;
     line-height: 32px;
+    text-align: justify;
     @media (max-width: 990px) {
       font-size: 30px;
       line-height: 40px;

@@ -3,19 +3,26 @@ extends layout
 block content
     div.page-container
         div.main-page(id='header')
-            div.navigate
-                div.logo.bold Bokator Khmer Angkor Club
-                div.navigate-item(ng-click="scrollToElement('profile')") WHO WE ARE
-                div.navigate-item(ng-click="scrollToElement('tour')") WHAT WE DO
-                div.navigate-item(ng-click="scrollToElement('contact')") CONTACT
-            div.name-tag(style="top: 170px; left: 131px;")
-                p.name.bold Samedy
-                p.title Leader
-                div.arrow.left-bottom
-            div.name-tag(style="top: 390px; right: 235px;")
-                p.name.bold Samreth
-                p.title Instructor
-                div.arrow.right-top
+            nav.navbar.navbar-custom
+                div.container-fluid
+                    div.navbar-header
+                        button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
+                            span.sr-only Toggle navigation
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                        p.navbar-brand.logo.bold Bokator Khmer Angkor Club
+                    div.collapse.navbar-collapse#bs-example-navbar-collapse-1
+                        ul.nav.navbar-nav.navbar-right
+                            li
+                                div(ng-click="scrollToElement('team')") Team
+                            li
+                                div(ng-click="scrollToElement('performance')") Performance
+                            li
+                                div(ng-click="scrollToElement('class')") Class
+                            li
+                                div(ng-click="scrollToElement('contact')") Contact Us
         div.intro-banner
             div.intro-span
                 p.title.bold
@@ -23,7 +30,7 @@ block content
                 p Bokator is a Cambodia traditional martial art which fell
                   | during Red Khmer period under government's persecution.
                   | Now we are the only 3 Bokator clubs in Siem Reap area.
-        div.team-page
+        div.team-page#team
             div.title.bold The TEAM
             div.float-block-container
                 div.float-block
@@ -31,12 +38,12 @@ block content
                       | their poor condition
                 div.float-block
                     p Some kids from rural area lives in our club.<br>
-                    p(style="font-size: 12px; margin-top: -10px") We teach them Bokator so even they can't afford
+                    p.float-block-detail We teach them Bokator so even they can't afford
                          | school, they can survive and support family.
-        div.row
+        div.row#performance
             div.col-md-6.full-block.intro-block(style='background-color: #86F7E8')
                 div.block-span
-                    p Attending performance support the organization's operation.<br>
+                    p(align='justify') Attending performance support the organization's operation.<br>
                       | Kids will join some performance as well. They earn their living
                       | and support their family by hardworking in Bokator.
             div.col-md-6.full-block(style='background-color: #78C8FF')
@@ -94,7 +101,7 @@ block content
                 span New Year Eve
                 p Time: 31th Dec
                   | Location: Hotels
-        div.row
+        div.row#class
             div.col-md-6.full-block(style='background-color: #16A267')
                 div.block-span
                     div.table-title.bold Practise
@@ -117,7 +124,7 @@ block content
             div.col-md-6.full-block(style='background-color: #16A267')
                 div.block-span
                     div.table-title Students
-                    p(align='justify').student-intro We have around 15-20 students, they train in different schedule.
+                    p.student-intro We have around 15-20 students, they train in different schedule.
                       | There are many students take class at 5 pm - 6 pm every Monday to
                       | Friday. A few students are trained every weekend. Time is flexible
                       | as they have full time jobs. <br>
@@ -158,5 +165,5 @@ block content
             img(src="images/video_icn.png")
         ui-gmap-google-map(center='map.center', zoom='map.zoom', options="map.options")
             ui-gmap-marker(coords="marker.coords", options="marker.options", events="marker.events", idkey="marker.id")
-        div.contact-page
+        div.contact-page#contact
         div.ad-page NativeSmiles.com

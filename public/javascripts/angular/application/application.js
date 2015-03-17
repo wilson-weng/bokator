@@ -15,7 +15,7 @@ var bokator = angular.module('bokator', ['uiGmapgoogle-maps'])
     }
 }]);
 
-bokator.controller('ApplicationCtrl', ['$scope', function($scope){
+bokator.controller('ApplicationCtrl', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll){
     $scope.map = { center: { latitude: 13.367428, longitude: 103.861936}, zoom: 15, options: {scrollwheel: false} };
     $scope.marker = {
         id: 0,
@@ -23,5 +23,14 @@ bokator.controller('ApplicationCtrl', ['$scope', function($scope){
             latitude: 13.367428,
             longitude: 103.861936
         }
-    }
+    };
+
+    $scope.scrollToElement = function(hash) {
+        // set the location.hash to the id of
+        // the element you wish to scroll to.
+        $location.hash(hash);
+
+        // call $anchorScroll()
+        $anchorScroll();
+    };
 }]);
