@@ -36,6 +36,11 @@ a {
   /* This image will be displayed fullscreen */
   background:url('../images/top_img.jpg') no-repeat center center;
   background-size:cover;
+  @media (max-width: 990px) {
+    height: 880px;
+    background:url('../images/sm/top_img_sm.jpg') no-repeat center center;
+    background-size:cover;
+  }
   .navigate{
     width: 100%;
     height: 100px;
@@ -150,10 +155,16 @@ a {
   height: 638px;
   color: #ffffff;
   font-size: 30px;
+  @media (max-width: 990px) {
+    font-size: 44px;
+  }
   &.intro-block{
     color: #3A4248;
     line-height: 50px;
     padding-top: 168px;
+    @media (max-width: 990px) {
+      line-height: 64px;
+    }
   }
   p{
     margin: 0;
@@ -164,6 +175,9 @@ a {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     display: table;
+    @media (max-width: 990px) {
+      width: 700px;
+    }
   }
   .block-number{
     font-size: 50px;
@@ -176,11 +190,17 @@ a {
     font-size: 44px;
     margin-bottom: 0;
     margin-top: 30px;
+    @media (max-width: 990px) {
+      font-size: 50px;
+    }
   }
   .block-text{
     line-height: 36px;
     margin-top: 30px;
     margin-bottom: 36px;
+    @media (max-width: 990px) {
+      line-height: 55px;
+    }
   }
   .left{
     float: right;
@@ -191,36 +211,63 @@ a {
   .table-title{
     font-size: 30px;
     margin-bottom: 30px;
+    @media (max-width: 990px) {
+      font-size: 50px;
+    }
   }
   table{
     font-size: 20px;
+    @media (max-width: 990px) {
+      font-size: 30px;
+    }
     .time{
       width: 125px;
       vertical-align: top;
+      @media (max-width: 990px) {
+        width: 200px;
+      }
     }
     .schedule{
       width: 300px;
       vertical-align: top;
       padding-bottom: 25px;
+      @media (max-width: 990px) {
+        width: 500px;
+      }
     }
   }
   .student-intro{
     font-size: 20px;
     line-height: 32px;
+    @media (max-width: 990px) {
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
   .class-title{
     font-size: 44px;
+    @media (max-width: 990px) {
+      font-size: 55px;
+    }
   }
   .class-type{
     font-size: 24px;
     margin-top: 40px;
     margin-bottom: 60px;
     line-height: 40px;
+    @media (max-width: 990px) {
+      font-size: 38px;
+      line-height: 56px;
+    }
   }
   .class-detail{
     font-size: 20px;
     margin: 0 0 10px;
     line-height: 25px;
+    @media (max-width: 990px) {
+      font-size: 32px;
+      line-height: 32px;
+    }
   }
 }
 .show-page{
@@ -283,14 +330,29 @@ a {
   height: 256px;
   background-color: #363B45;
   color: #bcbec1;
+  @media (max-width: 990px) {
+    height: 360px;
+  }
   .class-info-span{
     width: 380px;
     margin-left: auto;
     margin-right: auto;
-    .title{
+    @media (max-width: 990px) {
+      width: 700px;
+    }
+    .title {
       font-size: 28px;
       padding-top: 20px;
       padding-bottom: 20px;
+      @media (max-width: 990px) {
+        font-size: 44px;
+      }
+    }
+    .info{
+      @media (max-width: 990px) {
+        font-size: 30px;
+        line-height: 36px;
+      }
     }
   }
 }
